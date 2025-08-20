@@ -1,8 +1,6 @@
-package com.example.spring_gpt.controller;
+package com.example.spring_gpt.mask;
 
-import com.example.spring_gpt.entity.ChatMessage;
-import com.example.spring_gpt.entity.Mask;
-import com.example.spring_gpt.repository.MaskRepository;
+import com.example.spring_gpt.message.ChatMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

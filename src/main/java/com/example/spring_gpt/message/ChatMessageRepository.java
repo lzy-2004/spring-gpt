@@ -1,6 +1,5 @@
-package com.example.spring_gpt.repository;
+package com.example.spring_gpt.message;
 
-import com.example.spring_gpt.entity.ChatMessage;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ChatMessageRepository extends CrudRepository<ChatMessage,String> {

@@ -1,5 +1,7 @@
-package com.example.spring_gpt.entity;
+package com.example.spring_gpt.message;
 
+import com.example.spring_gpt.session.ChatSession;
+import com.example.spring_gpt.mask.Mask;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 

@@ -1,5 +1,7 @@
-package com.example.spring_gpt.entity;
+package com.example.spring_gpt.session;
 
+import com.example.spring_gpt.mask.Mask;
+import com.example.spring_gpt.message.ChatMessage;
 import jakarta.persistence.*;
 
 import java.util.List;
