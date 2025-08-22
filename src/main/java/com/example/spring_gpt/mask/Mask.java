@@ -2,10 +2,12 @@ package com.example.spring_gpt.mask;
 
 import com.example.spring_gpt.message.ChatMessage;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.List;
 
 @Entity
+@Data
 public class Mask {
 
     @Id
@@ -18,36 +20,4 @@ public class Mask {
 
     @OneToMany(mappedBy = "mask", cascade = CascadeType.PERSIST)
     private List<ChatMessage> context;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<ChatMessage> getContext() {
-        return context;
-    }
-
-    public void setContext(List<ChatMessage> mesageList) {
-        this.context = mesageList;
-    }
 }
